@@ -1,12 +1,15 @@
+package model;
 import java.util.ArrayList;
 
+import Drive.BookScanningTask;
+
 public 	class Library  {
-	ArrayList<Book> books = new ArrayList<Book>();
-	Integer shipPerDay, signUpProccess;
-	Integer scoreSumOfBooks = 0;
-	int idx;
+	public ArrayList<Book> books = new ArrayList<Book>();
+	public Integer shipPerDay, signUpProccess;
+	public Integer scoreSumOfBooks = 0;
+	public int idx;
 	
-	Library(ArrayList<Book> bookIn,int shipPerDayTime,int signUpProccessTime,int index){
+	public Library(ArrayList<Book> bookIn,int shipPerDayTime,int signUpProccessTime,int index){
 		books = bookIn;
 		shipPerDay = shipPerDayTime;
 		signUpProccess = signUpProccessTime;

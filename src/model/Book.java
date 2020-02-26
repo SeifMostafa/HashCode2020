@@ -1,15 +1,16 @@
+package model;
 import java.util.ArrayList;
 
 public class Book {
-	Integer score;
-	int idx;
-	ArrayList<Library>libsContainBook ;
-	Book(int s,int index) {
+	public Integer score;
+	public int idx;
+	public ArrayList<Library>libsContainBook ;
+	public Book(int s,int index) {
 		score = s;
 		idx = index;
 		libsContainBook = new ArrayList<Library>();
 	}
-	Book(int index) {
+	public Book(int index) {
 		idx = index;
 	}
 	@Override

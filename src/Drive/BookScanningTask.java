@@ -1,3 +1,4 @@
+package Drive;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,12 +10,14 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
+import model.Book;
+import model.Library;
 import model.Score;
 
 public class BookScanningTask {
 	static int time = 7;
-	static ArrayList<Book> allBooks ;
-	static ArrayList<Library> libraries;
+	public static ArrayList<Book> allBooks ;
+	public static ArrayList<Library> libraries;
 	static String DIRECTORY_PATH = "/home/azizax/Downloads/HASHCODE/2020/FOR_SUBMISSION3/";
 	static String[] inputFileNames = { "a_example.txt", "b_read_on.txt", "c_incunabula.txt", "d_tough_choices.txt",
 			"e_so_many_books.txt", "f_libraries_of_the_world.txt" };
