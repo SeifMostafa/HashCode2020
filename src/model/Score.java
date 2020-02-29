@@ -1,8 +1,9 @@
 package model;
 
 public class Score {
-	String methodologyName,answerString;
-	int maxScoreReached;
+	String methodologyName,answerString="";
+	int maxScoreReached=0;
+	public int numberOfLibsSignedUp=0;
 	@Override
 	public String toString() {
 		return "Score [methodologyName: "+methodologyName+", maxScoreReached: " +maxScoreReached +"]";
@@ -29,6 +30,9 @@ public class Score {
 		super();
 		this.answerString = answerString;
 		this.maxScoreReached = maxScoreReached;
+	}
+	public Score() {
+		
 	}
 	
 }
